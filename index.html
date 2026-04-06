@@ -4,8 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Old Fuel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <!-- HEADER SECTION -->
+  <header>
+    <div class="header-container">
+      <div>
+        <img src="icons/old-fuel.png" alt="old fuel icon" height="50px">
+        <h1>Old Fuel</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATON MENU -->
+  <nav>
+    <div class="navigation-menu">
+      <a href="#introduction">Introduction</a>
+      <a href="#datasets">Datasets</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT SECTION -->
+  <main>
+    <div class="main-content-container">
+      <div class="introduction-container">
+        <h2>Introduction</h2>
+        <p>Old Fuel uses the classic Auto MPG dataset from the UCI Machine Learning Repository. The data includes 398 cars from 1970 to 1982, with information on each vehicle's city-cycle fuel consumption, engine displacement, horsepower, weight, acceleration, cylinders, model year, and origin (USA, Europe, or Japan). Eight instances were removed from the original dataset, which could introduce minor bias, but all remaining records are complete with no missing values. This data powers our fuel economy lookups and estimates for vintage car enthusiasts and shoppers.</p>
+      </div>
+      <div class="available-datasets-container">
+        <h2>Available Datasets</h2>
+        <div class="datasets-grid-container">
+          <div class="dataset-grid-items">
+            <div class="dataset-flex-container">
+              <h5>UCI Auto MPG (1970-1982)</h5>
+              <p>UCI vintage MPG data</p>
+              <a href="http://archive.ics.uci.edu/dataset/9/auto+mpg">View dataset</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
