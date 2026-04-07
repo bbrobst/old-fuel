@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Fuel - Data Deletion</title>
+    <link rel="stylesheet" href="data-deletion.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <div class="header-container">
+        <div>
+          <img src="icons/old-fuel.png" alt="old fuel icon" height="50px" />
+          <h1>Old Fuel</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVIGATON MENU -->
+    <nav>
+      <div class="navigation-menu">
+        <a href="#introduction">Introduction</a>
+        <a href="#datasets">Datasets</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main-container">
+        <div class="submit-flex-container">
+          <h2>Delete Data</h2>
+          <p>
+            Use the form below to request deletion of a record from the
+            database. Fields marked with an asterisk are required.
+          </p>
+        </div>
+        <!-- FORM -->
+        <form action="" method="POST">
+          <div class="form-container">
+            <div class="flex-row">
+              <!-- NAME -->
+              <div class="flex-col">
+                <label for="name">Record ID *</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="e.g. REC-00421"
+                  class="max-width-form"
+                  required
+                />
+              </div>
+              <!-- EMAIL ADDRESS -->
+              <div class="flex-col">
+                <label for="name">Email Address *</label>
+                <input
+                  class="max-width-form"
+                  type="text"
+                  name="email"
+                  placeholder="jane@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <!-- DATASET TITLE -->
+            <div class="flex-row">
+              <div class="flex-col">
+                <label for="dataset-title">Dataset Title *</label>
+                <input
+                  type="text"
+                  name="dataset-title"
+                  placeholder="e.g. Vintage Cars 2024"
+                  class="max-width-form"
+                  required
+                />
+              </div>
+              <!-- CAR ORIGIN -->
+              <div class="flex-col">
+                <label for="category">Origin *</label>
+                <select
+                  name="origin"
+                  id="origin"
+                  class="max-width-form"
+                  required
+                >
+                  <option value="ford">Ford</option>
+                  <option value="europe">Europe</option>
+                  <option value="japan">Japan</option>
+                </select>
+              </div>
+            </div>
+            <!-- DESCRIPTION -->
+            <div class="flex-col">
+              <label for="description">Reason for Deletion *</label>
+              <textarea
+                name="description"
+                id="description"
+                class="max-width-input"
+                placeholder="Explain why this record should be removed (e.g. duplicate, outdated, inaccurate)."
+                required
+              ></textarea>
+            </div>
+            <!-- SUBMIT BUTTON -->
+            <button>Request Deletion</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Old Fuel. All rights reserved</p>
+        <p>Email: <a href="contact@oldfuel.com">contact@oldfuel.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
