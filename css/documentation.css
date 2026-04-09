@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: rgb(255, 249, 249);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h1, h5 {
+  font-family: 'Noto Serif', serif;
+}
+
+
+/* HEADER */
+.header-container {
+  background-color: rgb(29, 33, 43);
+  color: white;
+  padding: 2rem 0;
+}
+
+.header-container div {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-container div img {
+  border-radius: 4px;
+}
+
+/* NAVIGATION MENU */
+.navigation-menu {
+  background-color: rgb(232, 237, 243);
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  font-size: 1.4rem;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+  color: rgba(31, 36, 46, 0.8);
+}
+
+.navigation-menu a:hover {
+  color: blue;
+}
+
+/* MAIN CONTENT */
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project-overview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 5rem;
+}
+
+.project-overview-container p {
+  font-size: 1.6rem;
+  max-width: 65%;
+}
+
+/* APP & TEAM INFORMATION */
+.app-team-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.app-team-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: fit-content;
+  padding: 2rem 20rem 2rem 2rem;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+
+.app-team-flex-container-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.name-url-flex-row {
+  display: flex;
+  gap: 30rem;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 2rem;
+}
+
+.app-info-flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.credit-flex-col {
+  display: flex;
+}
+
+.app-team-header-category {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.app-info-credit-description {
+  color: rgb(103, 111, 126);
+}
+
+.app-info-credit-description, .app-info-flex-col a {
+  font-size: 1.4rem;
+}
+
+span {
+  white-space: nowrap;
+}
+
+/* FOOTER */
+footer {
+  color: rgb(196, 204, 212);
+  font-size: 1.4rem;
+}
+
+.footer-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 20rem 4rem 0;
+  background-color: rgb(29, 33, 43);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container div {
+  display: flex;
+}
+
+.footer-container p a {
+  color: rgb(196, 204, 212);
+}
+
+.footer-container p a:hover {
+  color: rgb(231, 235, 238)
+}
+
+/* align everything */
+.header-container div, .navigation-menu, .footer-container, .available-datasets-container, .project-overview-container, .app-team-info {
+  padding-left: 20rem;
+} 
+
+
+/* MEDIA QUERIES */
+@media(max-width: 60rem) {
+  .header-container div, .navigation-menu, .footer-container, .available-datasets-container, .introduction-container {
+    padding-left: 10rem;
+  } 
+
+  .footer-container {
+    padding-right: 10rem;
+  }
+}
+@media(max-width: 40rem) {
+  .header-container div, .navigation-menu, .footer-container, .available-datasets-container, .introduction-container {
+    padding-left: 4rem;
+  } 
+
+  .footer-container {
+    padding-right: 4rem;
+  }
+}

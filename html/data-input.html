@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Old Fuel - Data Deletion</title>
-    <link rel="stylesheet" href="data-deletion.css" />
+    <title>Old Fuel - Data Input</title>
+    <link rel="stylesheet" href="/css/data-input.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,7 @@
     <header>
       <div class="header-container">
         <div>
-          <img src="icons/old-fuel.png" alt="old fuel icon" height="50px" />
+          <img src="/icons/old-fuel.png" alt="old fuel icon" height="50px" />
           <h1>Old Fuel</h1>
         </div>
       </div>
@@ -35,10 +35,10 @@
     <main>
       <div class="main-container">
         <div class="submit-flex-container">
-          <h2>Delete Data</h2>
+          <h2>Submit Your Data</h2>
           <p>
-            Use the form below to request deletion of a record from the
-            database. Fields marked with an asterisk are required.
+            Use the form below to submit a dataset. All fields marked with an
+            asterisk are required.
           </p>
         </div>
         <!-- FORM -->
@@ -47,11 +47,11 @@
             <div class="flex-row">
               <!-- NAME -->
               <div class="flex-col">
-                <label for="name">Record ID *</label>
+                <label for="name">Full Name *</label>
                 <input
                   type="text"
                   name="name"
-                  placeholder="e.g. REC-00421"
+                  placeholder="Jane Doe"
                   class="max-width-form"
                   required
                 />
@@ -97,17 +97,26 @@
             </div>
             <!-- DESCRIPTION -->
             <div class="flex-col">
-              <label for="description">Reason for Deletion *</label>
+              <label for="description">Description *</label>
               <textarea
                 name="description"
                 id="description"
                 class="max-width-input"
-                placeholder="Explain why this record should be removed (e.g. duplicate, outdated, inaccurate)."
+                placeholder="Briefly describe the dataset, its source, and how it was collected"
                 required
               ></textarea>
             </div>
+            <!-- URL -->
+            <div class="flex-col">
+              <label for="source-url">Source URL</label>
+              <input
+                type="text"
+                class="max-width-input"
+                placeholder="https://..."
+              />
+            </div>
             <!-- SUBMIT BUTTON -->
-            <button>Request Deletion</button>
+            <button>Submit Dataset</button>
           </div>
         </form>
       </div>
