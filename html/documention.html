@@ -26,9 +26,10 @@
     <!-- NAVIGATON MENU -->
     <nav>
       <div class="navigation-menu">
-        <a href="#introduction">Introduction</a>
-        <a href="#datasets">Datasets</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="data-input.html">Input Data</a>
+        <a href="data-deletion.html">Delete Data</a>
+        <a href="data-update.html">Update Data</a>
       </div>
     </nav>
 
@@ -87,6 +88,83 @@
         </div>
 
         <!-- TOOLS & HARDWARE REQUIRMENTS -->
+        <div class="tools-hardware-container-flex-col">
+          <h2>Tools & Hardware Requirements</h2>
+          <div class="tools-hardware-grid-container">
+            <div class="tools-hardware-grid-items">
+              <div class="tools-hardware-flexbox-col">
+                <p>Software Requirements</p>
+                <div class="tools-hardware-flex-items">
+                  <ul>
+                    <li>PostgreSql</li>
+                    <li>Local Server</li>
+                    <li>Git</li>
+                    <li>Modern Web Browser</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tools-hardware-grid-items">
+              <div class="tools-hardware-flexbox-col">
+                <p>Hardware Requirements</p>
+                <div class="tools-hardware-flex-items">
+                  <ul>
+                    <li>Minimum 8 GB RAM</li>
+                    <li>Minimum 12 GB Available Disk Space</li>
+                    <li>Dual Core 2.0 GHz or Higher Processor</li>
+                    <li>Stable Internet Connection</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SETUP INSTRUCTION -->
+        <div class="setup-instruction-flexbox-container-col">
+          <h2>Setup Instruction</h2>
+          <div class="setup-steps-flexbox-container-col">
+            <div class="setup-steps-flexbox-col">
+              <p class="setup-steps-header">1. Download the CSV file</p>
+              <div class="setup-steps-description-flexbox-container-col">
+                <p>git clone https://github.com/bbrobst/old-fuel.git</p>
+                <p>cd old-fuel</p>
+              </div>
+            </div>
+            <div class="setup-steps-flexbox-col">
+              <p class="setup-steps-header">2. Instal Dependencies</p>
+              <div class="setup-steps-description-flexbox-container-col">
+                <p># Install Python</p>
+                <p># Install required packages</p>
+                <p>&emsp;pip install flask psycopg2-binary python-dotenv</p>
+              </div>
+            </div>
+            <div class="setup-steps-flexbox-col">
+              <p class="setup-steps-header">
+                3. Set Up the Database Connection
+              </p>
+              <div class="setup-steps-description-flexbox-container-col">
+                <p>DB_HOST=localhost</p>
+                <p>DB_NAME=car_data_db</p>
+                <p>DB_USER=postgres</p>
+                <p>DB_PASSWORD=yourpassword</p>
+                <p>DB_PORT=5432</p>
+              </div>
+            </div>
+            <div class="setup-steps-flexbox-col">
+              <p class="setup-steps-header">4. Start the Application</p>
+              <div class="setup-steps-description-flexbox-container-col">
+                <p>python OldFuel.py</p>
+              </div>
+            </div>
+            <div class="setup-steps-flexbox-col">
+              <p class="setup-steps-header">5. Access the Website</p>
+              <div class="setup-steps-description-flexbox-container-col">
+                <p>http://127.0.0.1:5000</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
