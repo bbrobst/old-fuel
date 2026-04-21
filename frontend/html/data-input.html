@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Fuel - Data Input</title>
+    <link rel="stylesheet" href="/frontend/css/data-input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <div class="header-container">
+        <div>
+          <img src="/frontend/icons/old-fuel.png" alt="old fuel icon" height="50px" />
+          <h1>Old Fuel</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVIGATON MENU -->
+    <nav>
+      <div class="navigation-menu">
+        <a href="/index.html">Home</a>
+        <a href="data-deletion.html">Delete Data</a>
+        <a href="data-update.html">Update Data</a>
+        <a href="documention.html">Documentation</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main-container">
+        <div class="submit-flex-container">
+          <h2>Submit Your Data</h2>
+          <p>
+            Use the form below to submit a dataset. All fields are required to submit a dataset.
+          </p>
+        </div>
+        <!-- FORM -->
+        <form action="/api/cars" method="POST">
+          <div class="form-container">
+            <div class="flex-row">
+              <!-- CAR NAME -->
+              <div class="flex-col">
+                <label for="car_name">Car Name</label>
+                <input
+                  class="max-width-form"
+                  type="text"
+                  name="car_name"
+                  placeholder="Ford Torino"
+                  required
+                />
+              </div>
+              <!-- MPG -->
+              <div class="flex-col">
+                <label for="mpg">Miles Per Gallon</label>
+                <input
+                  class="max-width-form"
+                  type="text"
+                  name="mpg"
+                  placeholder="23"
+                  required
+                />
+              </div>
+              <!-- CYLINDERS -->
+              <div class="flex-col">
+                <label for="cylinders">Cylinders</label>
+                <input
+                  class="max-width-form"
+                  type="text"
+                  name="cylinders"
+                  placeholder="e.g. 8"
+                  required
+                />
+              </div>
+            </div>
+            <!-- DISPLACEMENT -->
+            <div class="flex-row">
+              <div class="flex-col">
+                <label for="displacement">Displacement (in<sup>3</sup>)</label>
+                <input
+                  type="text"
+                  name="displacement"
+                  placeholder="e.g. 324"
+                  class="max-width-form"
+                  required
+                />
+              </div>
+              <!-- HORSEPOWER -->
+              <div class="flex-col">
+                <label for="horsepower">Horsepower</label>
+                <input
+                  type="text"
+                  name="horsepower"
+                  placeholder="e.g. 217"
+                  class="max-width-form"
+                  required
+                />
+              </div>
+              <!-- WEIGHT -->
+              <div class="flex-col">
+                <label for="weight">Weight (lb)</label>
+                <input
+                  type="text"
+                  name="weight"
+                  placeholder="e.g. 3150"
+                  class="max-width-form"
+                  required
+                />
+              </div>
+            </div>
+            <!-- ACCELERATION -->
+            <div class="flex-row">
+              <div class="flex-col">
+                <label for="acceleration">Acceleration</label>
+                <input
+                  type="text"
+                  name="acceleration"
+                  placeholder="e.g. 12"
+                  class="max-width-form"
+                  required
+                />
+              </div>
+              <!-- MODEL YEAR -->
+              <div class="flex-col">
+                <label for="model_year">Model Year</label>
+                <input
+                  type="text"
+                  name="model_year"
+                  placeholder="e.g. 72"
+                  class="max-width-form"
+                  required
+                />
+              </div>
+              <!-- CAR ORIGIN -->
+              <div class="flex-col">
+                <label for="origin">Origin</label>
+                <select
+                  name="origin"
+                  id="origin"
+                  class="max-width-form"
+                  required
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </div>
+            <!-- SUBMIT BUTTON -->
+            <button>Submit Dataset</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Old Fuel. All rights reserved</p>
+        <p>Email: <a href="contact@oldfuel.com">contact@oldfuel.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
