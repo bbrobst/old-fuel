@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Old Fuel - Documentation</title>
-    <link rel="stylesheet" href="/css/documentation.css" />
+    <link rel="stylesheet" href="/frontend/css/documentation.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,7 @@
     <header>
       <div class="header-container">
         <div>
-          <img src="/icons/old-fuel.png" alt="old fuel icon" height="50px" />
+          <img src="/frontend/icons/old-fuel.png" alt="old fuel icon" height="50px" />
           <h1>Old Fuel</h1>
         </div>
       </div>
@@ -39,12 +39,9 @@
         <div class="project-overview-container">
           <h2>Project Overview</h2>
           <p>
-            The Research Data Portal is a web-based platform designed for
+            Old Fuel is a web-based platform designed for
             managing, submitting, updating, and deleting research datasets. It
-            provides an intuitive interface for researchers, analysts, and
-            administrators to interact with curated data collections. The portal
-            supports open access principles and streamlines data management
-            workflows for academic and professional use.
+            provides an interface for users to interact with the database.
           </p>
         </div>
         <!-- APP & TEAM INFORMATION -->
@@ -60,10 +57,10 @@
                   </p>
                 </div>
                 <div class="app-info-flex-col">
-                  <p class="app-team-header-category">Web URL</p>
+                  <!-- <p class="app-team-header-category">Web URL</p>
                   <a href="http://127.0.0.1:5500/html/index.html"
                     >http://127.0.0.1:5500/html/index.html</a
-                  >
+                  > -->
                 </div>
               </div>
               <div class="app-info-flex-col">
@@ -125,25 +122,24 @@
           <h2>Setup Instruction</h2>
           <div class="setup-steps-flexbox-container-col">
             <div class="setup-steps-flexbox-col">
-              <p class="setup-steps-header">1. Download the CSV file</p>
+              <p class="setup-steps-header">1. Clone the Repository</p>
               <div class="setup-steps-description-flexbox-container-col">
                 <p>git clone https://github.com/bbrobst/old-fuel.git</p>
                 <p>cd old-fuel</p>
               </div>
             </div>
             <div class="setup-steps-flexbox-col">
-              <p class="setup-steps-header">2. Instal Dependencies</p>
+              <p class="setup-steps-header">2. Install Dependencies</p>
               <div class="setup-steps-description-flexbox-container-col">
-                <p># Install Python</p>
-                <p># Install required packages</p>
-                <p>&emsp;pip install flask psycopg2-binary python-dotenv</p>
+                <p># Install Node.js dependencies</p>
+                <p>&emsp;npm install</p>
+                <p># This installs: express, pg, dotenv, and other dependencies</p>
               </div>
             </div>
             <div class="setup-steps-flexbox-col">
-              <p class="setup-steps-header">
-                3. Set Up the Database Connection
-              </p>
+              <p class="setup-steps-header">3. Set Up the Database Connection</p>
               <div class="setup-steps-description-flexbox-container-col">
+                <p># Create a .env file in the root directory</p>
                 <p>DB_HOST=localhost</p>
                 <p>DB_NAME=car_data_db</p>
                 <p>DB_USER=postgres</p>
@@ -152,20 +148,27 @@
               </div>
             </div>
             <div class="setup-steps-flexbox-col">
-              <p class="setup-steps-header">4. Start the Application</p>
+              <p class="setup-steps-header">4. Set Up the PostgreSQL Database</p>
               <div class="setup-steps-description-flexbox-container-col">
-                <p>python OldFuel.py</p>
+                <p># Create database and run migrations</p>
+                <p>psql -U postgres -c "CREATE DATABASE car_data_db;"</p>
+                <p>psql -U postgres -d car_data_db -f schema.sql</p>
               </div>
             </div>
             <div class="setup-steps-flexbox-col">
-              <p class="setup-steps-header">5. Access the Website</p>
+              <p class="setup-steps-header">5. Start the Application</p>
               <div class="setup-steps-description-flexbox-container-col">
-                <p>http://127.0.0.1:5000</p>
+                <p>npm start</p>
+              </div>
+            </div>
+            <div class="setup-steps-flexbox-col">
+              <p class="setup-steps-header">6. Access the Website</p>
+              <div class="setup-steps-description-flexbox-container-col">
+                <p>http://localhost:3000</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </main>
 
     <!-- FOOTER -->
