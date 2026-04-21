@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: rgb(255, 249, 249);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h1, h5 {
+  font-family: 'Noto Serif', serif;
+}
+
+p {
+  color: rgb(103, 111, 126);
+  font-size: 1.6rem;
+  max-width: 55.5rem;
+}
+
+/* HEADER */
+.header-container {
+  background-color: rgb(29, 33, 43);
+  color: white;
+  padding: 2rem 0;
+}
+
+.header-container div {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-container div img {
+  border-radius: 4px;
+}
+
+/* NAVIGATION MENU */
+.navigation-menu {
+  background-color: rgb(232, 237, 243);
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  font-size: 1.4rem;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+  color: rgba(31, 36, 46, 0.8);
+}
+
+.navigation-menu a:hover {
+  color: blue;
+}
+
+/* MAIN CONTENT */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 5rem;
+}
+
+.submit-flex-container {
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+/* FORM */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.flex-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.max-width-input {
+  max-width: 55rem;
+}
+
+button {
+  max-width: 15rem;
+  padding: 1.3rem 0;
+  border-radius: 4px;
+  border: none;
+  background-color: #ef4444;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ef4444;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+
+input, textarea, select {
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+}
+
+.max-width-form {
+  width: 26.5rem;
+}
+
+/* FOOTER */
+footer {
+  color: rgb(196, 204, 212);
+  font-size: 1.4rem;
+}
+
+.footer-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 20rem 4rem 0;
+  background-color: rgb(29, 33, 43);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container div {
+  display: flex;
+}
+
+.footer-container p a {
+  color: rgb(196, 204, 212);
+}
+
+.footer-container p a:hover {
+  color: rgb(231, 235, 238)
+}
+
+/* align everything */
+.header-container div, .navigation-menu, .footer-container, .main-container  {
+  padding-left: 20rem;
+} 
+
+
+/* MEDIA QUERIES */
+@media(max-width: 60rem) {
+  .header-container div, .navigation-menu, .footer-container, .main-container  {
+    padding-left: 5rem;
+  } 
+  
+}

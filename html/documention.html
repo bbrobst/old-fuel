@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Fuel - Documentation</title>
+    <link rel="stylesheet" href="/css/documentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <div class="header-container">
+        <div>
+          <img src="/icons/old-fuel.png" alt="old fuel icon" height="50px" />
+          <h1>Old Fuel</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVIGATON MENU -->
+    <nav>
+      <div class="navigation-menu">
+        <a href="/index.html">Home</a>
+        <a href="data-input.html">Input Data</a>
+        <a href="data-deletion.html">Delete Data</a>
+        <a href="data-update.html">Update Data</a>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT SECTION -->
+    <main>
+      <div class="main-content-container">
+        <div class="project-overview-container">
+          <h2>Project Overview</h2>
+          <p>
+            The Research Data Portal is a web-based platform designed for
+            managing, submitting, updating, and deleting research datasets. It
+            provides an intuitive interface for researchers, analysts, and
+            administrators to interact with curated data collections. The portal
+            supports open access principles and streamlines data management
+            workflows for academic and professional use.
+          </p>
+        </div>
+        <!-- APP & TEAM INFORMATION -->
+        <div class="app-team-info">
+          <h2>App & Team Information</h2>
+          <div class="app-team-grid-container">
+            <div class="app-team-flex-container-col">
+              <div class="name-url-flex-row">
+                <div class="app-info-flex-col">
+                  <p class="app-team-header-category"><span>App Name</span></p>
+                  <p class="app-info-credit-description">
+                    <span>Old Fuel</span>
+                  </p>
+                </div>
+                <div class="app-info-flex-col">
+                  <p class="app-team-header-category">Web URL</p>
+                  <a href="http://127.0.0.1:5500/html/index.html"
+                    >http://127.0.0.1:5500/html/index.html</a
+                  >
+                </div>
+              </div>
+              <div class="app-info-flex-col">
+                <p class="app-team-header-category">Development Team</p>
+                <p class="app-info-credit-description">
+                  Benjamin Brobst — Software Developer
+                </p>
+              </div>
+              <div class="app-info-flex-col">
+                <p class="app-team-header-category">Design Team</p>
+                <p class="app-info-credit-description">Benjamin Brobst</p>
+              </div>
+              <div class="app-info-flex-col">
+                <p class="app-team-header-category">Management</p>
+                <p class="app-info-credit-description">
+                  Dr. Farah Kamw — Assistant Professor of Teaching, Wayne State
+                  University
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOOLS & HARDWARE REQUIRMENTS -->
+        <div class="tools-hardware-container-flex-col">
+          <h2>Tools & Hardware Requirements</h2>
+          <div class="tools-hardware-grid-container">
+            <div class="tools-hardware-grid-items">
+              <div class="tools-hardware-flexbox-col">
+                <p>Software Requirements</p>
+                <div class="tools-hardware-flex-items">
+                  <ul>
+                    <li>PostgreSql</li>
+                    <li>Local Server</li>
+                    <li>Git</li>
+                    <li>Modern Web Browser</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tools-hardware-grid-items">
+              <div class="tools-hardware-flexbox-col">
+                <p>Hardware Requirements</p>
+                <div class="tools-hardware-flex-items">
+                  <ul>
+                    <li>Minimum 8 GB RAM</li>
+                    <li>Minimum 12 GB Available Disk Space</li>
+                    <li>Dual Core 2.0 GHz or Higher Processor</li>
+                    <li>Stable Internet Connection</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SETUP INSTRUCTION -->
+        <div class="setup-instruction-flexbox-container-col">
+          <h2>Setup Instruction</h2>
+          <div class="setup-steps-flexbox-container-col">
+            <div class="setup-steps-flexbox-col">
+              <p class="setup-steps-header">1. Download the CSV file</p>
+              <div class="setup-steps-description-flexbox-container-col">
+                <p>git clone https://github.com/bbrobst/old-fuel.git</p>
+                <p>cd old-fuel</p>
+              </div>
+            </div>
+            <div class="setup-steps-flexbox-col">
+              <p class="setup-steps-header">2. Instal Dependencies</p>
+              <div class="setup-steps-description-flexbox-container-col">
+                <p># Install Python</p>
+                <p># Install required packages</p>
+                <p>&emsp;pip install flask psycopg2-binary python-dotenv</p>
+              </div>
+            </div>
+            <div class="setup-steps-flexbox-col">
+              <p class="setup-steps-header">
+                3. Set Up the Database Connection
+              </p>
+              <div class="setup-steps-description-flexbox-container-col">
+                <p>DB_HOST=localhost</p>
+                <p>DB_NAME=car_data_db</p>
+                <p>DB_USER=postgres</p>
+                <p>DB_PASSWORD=yourpassword</p>
+                <p>DB_PORT=5432</p>
+              </div>
+            </div>
+            <div class="setup-steps-flexbox-col">
+              <p class="setup-steps-header">4. Start the Application</p>
+              <div class="setup-steps-description-flexbox-container-col">
+                <p>python OldFuel.py</p>
+              </div>
+            </div>
+            <div class="setup-steps-flexbox-col">
+              <p class="setup-steps-header">5. Access the Website</p>
+              <div class="setup-steps-description-flexbox-container-col">
+                <p>http://127.0.0.1:5000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Old Fuel. All rights reserved</p>
+        <p>Email: <a href="contact@oldfuel.com">contact@oldfuel.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
