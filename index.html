@@ -66,8 +66,21 @@
             </div>
           </div>
         </div>
+
+        <!-- DATA TABLE SECTION -->
+        <div class="data-table-container">
+          <div style="display: flex; align-items: center; justify-content: space-between;     margin-bottom: 1.5rem;">
+            <h2>Car Database Records</h2>
+            <button class="refresh-btn" onclick="loadCarData()">Refresh</button>
+          </div>
+          <div id="table-loading" class="loading">Loading car data...</div>
+          <div id="table-container" style="display: none;"></div>
+          <div id="record-count" class="record-count"></div>
+        </div>
       </div>
     </main>
+
+
     <!-- FOOTER -->
     <footer>
       <div class="footer-container">
@@ -75,5 +88,7 @@
         <p>Email: <a href="contact@oldfuel.com">contact@oldfuel.com</a></p>
       </div>
     </footer>
+
+    <script src="/frontend/scripts/table.js"></script>
   </body>
 </html>

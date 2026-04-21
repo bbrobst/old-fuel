@@ -118,6 +118,112 @@ h1, h5 {
   font-size: 1.2rem;
 }
 
+/* Data Table Styles */
+.data-table-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-right: 20rem;
+}
+
+.data-table-wrapper {
+  max-height: 500px;  
+  overflow-y: auto;  
+  overflow-x: auto;   
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background-color: white;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;  
+}
+
+.data-table th {
+  background-color: rgb(29, 33, 43);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: sticky;
+  top: 0;  /* Makes header sticky when scrolling */
+  z-index: 10;
+}
+
+.data-table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 1.3rem;
+  color: rgb(55, 65, 81);
+}
+
+.data-table tr:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.data-table-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+  color: rgb(107, 114, 128);
+}
+
+.error {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.refresh-btn {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: rgb(29, 33, 43);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.refresh-btn:hover {
+  background-color: rgb(55, 65, 81);
+}
+
+.record-count {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: rgb(107, 114, 128);
+}
+
+/* Custom scrollbar styling (optional) */
+.data-table-wrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.data-table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.data-table-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.data-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /* FOOTER */
 footer {
   color: rgb(196, 204, 212);
@@ -127,7 +233,6 @@ footer {
 .footer-container {
   display: flex;
   position: absolute;
-  bottom: 0;
   left: 0;
   right: 0;
   padding: 3rem 20rem 4rem 0;
@@ -154,6 +259,20 @@ footer {
 } 
 
 
+
+@media(max-width: 60rem) {
+  .data-table-container {
+    padding-right: 10rem;
+  }
+}
+
+@media(max-width: 40rem) {
+  .data-table-container {
+    padding-right: 4rem;
+  }
+}
+
+
 /* MEDIA QUERIES */
 @media(max-width: 60rem) {
   .header-container div, .navigation-menu, .footer-container, .available-datasets-container, .introduction-container {
@@ -173,3 +292,5 @@ footer {
     padding-right: 4rem;
   }
 }
+
+

@@ -42,38 +42,38 @@
           </p>
         </div>
         <!-- FORM -->
-        <form action="/cars" method="POST">
+        <form action="/api/cars" method="POST">
           <div class="form-container">
             <div class="flex-row">
               <!-- CAR NAME -->
               <div class="flex-col">
-                <label for="name">Car Name</label>
+                <label for="car_name">Car Name</label>
                 <input
                   class="max-width-form"
                   type="text"
-                  name="email"
+                  name="car_name"
                   placeholder="Ford Torino"
                   required
                 />
               </div>
               <!-- MPG -->
               <div class="flex-col">
-                <label for="name">Miles Per Gallon</label>
+                <label for="mpg">Miles Per Gallon</label>
                 <input
                   class="max-width-form"
                   type="text"
-                  name="email"
+                  name="mpg"
                   placeholder="23"
                   required
                 />
               </div>
               <!-- CYLINDERS -->
               <div class="flex-col">
-                <label for="name">Cylinders</label>
+                <label for="cylinders">Cylinders</label>
                 <input
                   class="max-width-form"
                   type="text"
-                  name="email"
+                  name="cylinders"
                   placeholder="e.g. 8"
                   required
                 />
@@ -82,10 +82,10 @@
             <!-- DISPLACEMENT -->
             <div class="flex-row">
               <div class="flex-col">
-                <label for="dataset-title">Displacement (in<sup>3</sup>)</label>
+                <label for="displacement">Displacement (in<sup>3</sup>)</label>
                 <input
                   type="text"
-                  name="dataset-title"
+                  name="displacement"
                   placeholder="e.g. 324"
                   class="max-width-form"
                   required
@@ -93,10 +93,10 @@
               </div>
               <!-- HORSEPOWER -->
               <div class="flex-col">
-                <label for="dataset-title">Horsepower</label>
+                <label for="horsepower">Horsepower</label>
                 <input
                   type="text"
-                  name="dataset-title"
+                  name="horsepower"
                   placeholder="e.g. 217"
                   class="max-width-form"
                   required
@@ -104,10 +104,10 @@
               </div>
               <!-- WEIGHT -->
               <div class="flex-col">
-                <label for="dataset-title">Weight (lb)</label>
+                <label for="weight">Weight (lb)</label>
                 <input
                   type="text"
-                  name="dataset-title"
+                  name="weight"
                   placeholder="e.g. 3150"
                   class="max-width-form"
                   required
@@ -117,10 +117,10 @@
             <!-- ACCELERATION -->
             <div class="flex-row">
               <div class="flex-col">
-                <label for="dataset-title">Acceleration</label>
+                <label for="acceleration">Acceleration</label>
                 <input
                   type="text"
-                  name="dataset-title"
+                  name="acceleration"
                   placeholder="e.g. 12"
                   class="max-width-form"
                   required
@@ -128,10 +128,10 @@
               </div>
               <!-- MODEL YEAR -->
               <div class="flex-col">
-                <label for="dataset-title">Model Year</label>
+                <label for="model_year">Model Year</label>
                 <input
                   type="text"
-                  name="dataset-title"
+                  name="model_year"
                   placeholder="e.g. 72"
                   class="max-width-form"
                   required
@@ -139,16 +139,16 @@
               </div>
               <!-- CAR ORIGIN -->
               <div class="flex-col">
-                <label for="category">Origin</label>
+                <label for="origin">Origin</label>
                 <select
                   name="origin"
                   id="origin"
                   class="max-width-form"
                   required
                 >
-                  <option value="ford">1</option>
-                  <option value="europe">2</option>
-                  <option value="japan">3</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
                 </select>
               </div>
             </div>
